@@ -160,7 +160,7 @@ export function Projects() {
                       size="sm"
                       variant="glass"
                       className="flex-1"
-                      onClick={() => window.open(project.github, '_blank')}
+                      onClick={() => window.open('https://github.com/GitGenius92', '_blank')}
                     >
                       <Github className="w-4 h-4 mr-2" />
                       GitHub
