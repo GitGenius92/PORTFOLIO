@@ -165,15 +165,17 @@ export function Projects() {
                       <Github className="w-4 h-4 mr-2" />
                       GitHub
                     </Button>
-                    <Button
-                      size="sm"
-                      variant="glass"
-                      className="flex-1"
-                      onClick={() => window.open(project.live, '_blank')}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </Button>
+                    {project.live && (
+  <Button
+    size="sm"
+    variant="glass"
+    className="flex-1"
+    onClick={() => window.open(project.live, '_blank')}
+  >
+    <ExternalLink className="w-4 h-4 mr-2" />
+    Live Demo
+  </Button>
+)}
                   </div>
                 </div>
 
